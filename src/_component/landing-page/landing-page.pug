@@ -1,0 +1,24 @@
+-
+  var myFullName = "Cristi Toma";
+  var myJobTitle = 'student codetap academy'
+  var socialList = [
+    {icon: 'facebook2', url: 'https://facebook.com/cristitoma'},
+    {icon: 'youtube', url: 'https://twitter.com/cristitoma'},
+    {icon: 'twitter', url: 'https://youtube.com/cristitoma'},
+    {icon: 'google-plus2', url: 'https://youtube.com/cristitoma'},
+    {icon: 'stackoverflow', url: 'https://youtube.com/cristitoma'},
+    {icon: 'github', url: 'https://youtube.com/cristitoma'},
+    {icon: 'skype', url: 'https://youtube.com/cristitoma'},
+    {icon: 'linkedin', url: 'https://youtube.com/cristitoma'},
+    {icon: 'earth', url: 'https://youtube.com/cristitoma'},
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
